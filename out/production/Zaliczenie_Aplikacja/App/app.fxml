@@ -1,0 +1,53 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<GridPane fx:controller="App.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10"
+          styleClass="root">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+
+    <Label fx:id="label1">
+        <text>Choose source currency</text>
+        <GridPane.rowIndex>0</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+    </Label>
+    <ComboBox fx:id="box1">
+        <GridPane.rowIndex>1</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+    </ComboBox>
+    <TextField fx:id="intext">
+        <text></text>
+        <prefHeight>30</prefHeight>
+        <prefWidth>300</prefWidth>
+        <GridPane.rowIndex>1</GridPane.rowIndex>
+        <GridPane.columnIndex>1</GridPane.columnIndex>
+    </TextField>
+    <Label fx:id="label2">
+        <text>Choose target currency</text>
+        <GridPane.rowIndex>2</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+    </Label>
+    <ComboBox fx:id="box2">
+        <GridPane.rowIndex>3</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
+    </ComboBox>
+    <TextField fx:id="outtext">
+        <text></text>
+        <editable>false</editable>
+        <prefHeight>30</prefHeight>
+        <prefWidth>300</prefWidth>
+        <GridPane.rowIndex>3</GridPane.rowIndex>
+        <GridPane.columnIndex>1</GridPane.columnIndex>
+    </TextField>
+    <Button fx:id="calculateButton" onAction="#calculate">
+        <text>Calculate</text>
+        <GridPane.rowIndex>4</GridPane.rowIndex>
+        <GridPane.columnIndex>1</GridPane.columnIndex>
+    </Button>
+</GridPane>
