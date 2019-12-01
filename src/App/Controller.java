@@ -6,6 +6,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.net.HttpURLConnection;
 import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.ResourceBundle;
@@ -27,6 +28,11 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+
+
+
+
         ObservableList<String> currencyList =
                 FXCollections.observableArrayList(
                         "PLN",
